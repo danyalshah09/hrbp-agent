@@ -55,7 +55,79 @@ This hybrid approach prevents hallucinations and allows the agent to answer **an
 
 ### Step 1: Clone the Repository
 
-```bash
+
 git clone <your-repository-link>
 cd my-hrbp-agent
 
+### Step 2: Create & Activate Virtual Environment
+python -m venv venv
+venv\Scripts\activate
+
+### Step 3: Install Dependencies
+pip install -r requirements.txt
+
+### Step 4: Set Up Ollama (One-Time)
+
+Pull the model:
+
+ollama pull llama3
+
+
+Run Ollama (keep this terminal open):
+
+ollama run llama3
+
+### Step 5: Start the Application
+
+Open a new terminal, activate the environment again, and run:
+
+python app.py
+
+### Step 6: Open in Browser
+
+Visit:
+
+http://127.0.0.1:5000
+
+💬 Example Questions
+
+“Top 5 employees with the highest loan remaining”
+
+“Total loan remaining across all employees”
+
+“Average salary by department”
+
+“Who has the longest tenure?”
+
+“List employees from Finance with active loans”
+
+📝 Notes
+
+No paid APIs are used.
+
+The Excel file remains the single source of truth.
+
+The LLM is used strictly for reasoning and explanation.
+
+The UI follows the reference screenshots provided in the task.
+
+👤 Author
+
+[Your Name]
+Software Engineer Candidate
+
+
+---
+
+### ✅ What to do now (IMPORTANT)
+
+1. Paste this into `README.md`
+2. Replace:
+   - `<your-repository-link>`
+   - `[Your Name]`
+3. Commit & push
+
+```bash
+git add README.md
+git commit -m "Add project README"
+git push
