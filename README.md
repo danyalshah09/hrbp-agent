@@ -43,3 +43,19 @@ This hybrid approach prevents hallucinations and allows the agent to answer **an
 
 ## 📂 Project Structure
 
+---
+
+## 🚀 How to Run the Project
+
+### Prerequisites
+- Python 3.9+
+- Ollama installed: https://ollama.com
+
+---
+
+### Step 1: Clone the Repository
+
+```bash
+git clone <your-repository-link>
+cd my-hrbp-agent
+
